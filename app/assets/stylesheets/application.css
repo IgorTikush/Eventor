@@ -18,3 +18,24 @@
      font-size: 20px;
      margin-left: 1000px;
  }
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.container > div {
+    flex: 50%;
+}
+
+.left {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.right {
+    float: right;
+    width: 50%;
+    text-align: center;
+}

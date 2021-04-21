@@ -7,7 +7,19 @@
   <p>Created events:</p>
   <% @user.creatored_events.each do |event|%>
   <li> <%=event.title%>   <%=event.description%></li>
+  <p>Previous events:</p>
+  <%end %>
+  <% @user.attended_events.each do |event|%>
+  <% if event.date < Time.now%>
+  <li> <%=event.title%>   <%=event.description%></li>
+  <%end%>
+  <%end %>
+  <p>Upcoming events events:</p>
   
+  <% @user.attended_events.each do |event|%>
+  <% if event.date > Time.now%>
+  <li> <%=event.title%>   <%=event.description%></li>
+  <%end%>
   <%end %>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
