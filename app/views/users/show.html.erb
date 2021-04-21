@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @user.username %>
+</p>
+  <p>Created events:</p>
+  <% @user.creatored_events.each do |event|%>
+  <li> <%=event.title%>   <%=event.description%></li>
+  
+  <%end %>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
