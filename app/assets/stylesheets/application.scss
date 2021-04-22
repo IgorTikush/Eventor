@@ -39,3 +39,30 @@
     width: 50%;
     text-align: center;
 }
+
+.header {
+    display: flex;
+    margin-bottom: 2rem;
+    
+    &__logo {
+        
+        font-family: 'Knewave', cursive;
+        font-size: 3rem;
+        color: deeppink;
+    }
+    &__right-side {
+        display: flex;
+        margin-left: auto;
+        font-size: 1rem;
+        &__box_1 {
+            width: 7rem;
+        }
+
+        &__box_2 {
+            
+        }
+        
+    }
+
+    
+}

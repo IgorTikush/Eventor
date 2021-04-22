@@ -8,7 +8,7 @@
 </div>
 
 <%@events.each do |event|%>
-
+<%# нужно чтото придумать с разделением %>
   <% if event.time.past?%>
     <div class="left"><%=event.title%> </div>
   <% else %>
